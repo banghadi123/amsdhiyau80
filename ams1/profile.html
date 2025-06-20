@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Beranda</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+   body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8fff8;
+}
+
+/* Navbar Hijau Tua */
+.navbar-custom {
+  background-color: #04630c;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand,
+.nav-link {
+  color: #ffffff !important;
+}
+
+.nav-link:hover {
+  color: #d1fae5 !important;
+}
+
+/* Hero Hijau Tua */
+.hero {
+  background-color: #04630c;
+  background: linear-gradient(to right, #14532d, #b0b306);
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #e4f9e7;
+  margin-top: 10px;
+}
+
+/* Footer Hijau Tua */
+footer {
+  background-color: #37883d;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  color: #ffffff;
+  font-weight: 500;
+}
+/* Animasi Logo Melayang */
+.floating-logos {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  z-index: 0;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.floating-logos img.floating {
+  position: absolute;
+  width: 40px;
+  opacity: 0.1;
+  animation: float 8s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-20px) rotate(10deg); }
+  100% { transform: translateY(0px) rotate(0deg); }
+}
+
+
+
+  </style>
+</head>
+ <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand d-flex align-items-center" href="#" style="margin-left: 0;">
+      <div class="d-flex flex-column">
+        <span style="font-weight: bold; font-size: 1.6rem; color: #ffffff;">YAYASAN ALMANHAJUSSAWI DHIYAU NUSANTARA.</span>
+        <small style="font-size: 1.2rem; color: #ffffff;">KEMENKUMHAM NO : AHU-0021398.AH.01.04.TAHUN 2022</small>
+      </div>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-label="Toggle navigation">
+
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mainNavbar">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+        <li class="nav-iatem"><a class="nav-link" href="profile.html">Profile</a></li>
+        <li class="nav-item"><a class="nav-link" href="galeri.html">Galeri</a></li>
+        <li class="nav-item"><a class="nav-link" href="portofolio.html">portofolio</a></li>
+
+        <!-- Dropdown Data -->
+        <li class="nav-item dropdown">
+         <a class="nav-link dropdown-toggle" href="#" id="dataDropdownDATA" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Data
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="dataDropdownDATA">
+            <li><a class="dropdown-item" href="maghrib.html">Maghrib</a></li>
+            <li><a class="dropdown-item" href="isya.html">Isya</a></li>
+          </ul>
+        </li>
+        <!-- Dropdown Data -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="dataDropdownBIDANG" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            bidang
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="dataDropdownBIDANG">
+            <li><a class="dropdown-item" href="tim media.html">tim media</a></li>
+            <li><a class="dropdown-item" href="#"></a></li>
+          </ul>
+        </li>
+        <!-- Dropdown Data -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="dataDropdownKEGIATAN" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            kegiatan
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="dataDropdownKEGIATAN">
+            <li><a class="dropdown-item" href="sosial.html">sosial</a></li>
+            <li><a class="dropdown-item" href="#"></a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a class="nav-link" href="kontak.html">Kontak</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  <!-- Konten Utama -->
+<main class="container my-5">
+  <h1 class="mt-5 pt-5 text-center fade-in-up text-success fw-bold">📢 Sederet Profile Kami</h1>
+<p class="text-center mb-4 fade-in-up fs-5">
+  Dengan hormat, kami sampaikan informasi mengenai <strong>Yayasan Almanhajussawi Dhiya’u Nusantara</strong>.  
+  Silakan simak detail berikut untuk mengetahui profil, SEJARAH SINGKAT YAYASAN ALMANHAJUSSAWI DHIYA'U NUSANTARA,PROFILE GURU,PROFILE SANAD,Struktur Organisasi Yayasan.
+</p>
+
+  <!-- Card 1: Atas -->
+ <div class="mb-4">
+  <div class="card shadow-sm floating-card">
+    <div class="card-header bg-success text-white">
+      SEJARAH SINGKAT YAYASAN ALMANHAJUSSAWI DHIYA'U NUSANTARA
+    </div>
+    <div class="card-body">
+      <div class="row align-items-center">
+        <!-- Gambar di kiri -->
+        <div class="col-md-4 col-12 text-center mb-3 mb-md-0">
+          <img src="img/yayasan.png" alt="Foto Sejarah" class="img-fluid rounded" style="max-width: 200px; aspect-ratio: 1 / 1; object-fit: cover;">
+        </div>
+
+        <!-- Teks di kanan -->
+        <div class="col-md-8 col-12">
+          <p>
+           <p class="card-text fs-5">
+            Yayasan Almanhajussawi Dhiya’u Nusantara didirikan pada tahun 2022 oleh Ust. H. Waisul Qurni Zainudin, S.Pd., sebagai bentuk kepedulian terhadap pendidikan Islam dan pembinaan umat.
+          </p>
+          <p class="card-text fs-5">
+          ini berfokus pada program-program pendidikan dan dakwah seperti:</p>
+          <ul class="ps-3 fs-5">
+            <li>Gramatikal Arab Dasar</li>
+            <li>Tahsin Al‑Qur’an &amp; Quranic Centre</li>
+            <li>Fiqih Dasar</li>
+            <li>Latihan Ceramah</li>
+            <li>Baca Kitab Melayu Arab</li>
+            <li>Majelis Taklim Ibu‑Ibu</li>
+            <li>TPQ Anak</li>
+            <li>Kegiatan Sosial (khitan massal, santunan yatim, qurban, dll.)</li>
+          </ul>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row mb-4">
+  <!-- Kolom penuh untuk Profile Guru -->
+  <div class="col-12 mb-4">
+    <div class="card shadow-sm">
+      <div class="card-header bg-success text-white">
+        <b>PROFILE GURU</b>
+      </div>
+      <div class="card-body">
+        <div id="profileCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <div class="card border-0 px-2 pt-3">
+                <div class="card-body">
+                  <div style="float: left; margin-right: 15px; width: 130px;">
+                    <img src="img/Ustadz H. Waisul Qurni Zainudin.png" class="img-fluid rounded" alt="Ustadz 1">
+                  </div>
+                  <h3 class="card-title">Ustadz H. Waisul Qurni Zainudin</h3>
+                  <p class="card-text fs-5">
+                    Beliau dikenal karena keilmuannya dalam tafsir dan dakwah di wilayah Jawa Barat. Sosok yang aktif dalam pengajaran dan kegiatan dakwah di berbagai pesantren dan masjid.
+                  </p>
+                  <p class="card-text"><small class="text-muted">Last updated 5 mins ago</small></p>
+                  <div style="clear: both;"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+              <div class="card border-0 px-2 pt-3">
+                <div class="card-body">
+                  <div style="float: left; margin-right: 15px; width: 130px;">
+                    <img src="img/KH_E._Mohammad_Hilm.png" class="img-fluid rounded" alt="Ustadz 2">
+                  </div>
+                  <h3 class="card-title">KH E. Mohammad Hilmi</h5>
+                  <p class="card-text fs-5">
+                    KH E. Mohammad Hilmi adalah seorang ulama kharismatik asal Banten yang dikenal sebagai tokoh penting dalam pengembangan dan pengajaran ilmu falak (astronomi Islam) di Indonesia. Ia merupakan pendiri Pondok Pesantren Nurul Huda, sebuah lembaga pendidikan Islam yang menekankan pentingnya pemahaman ilmu syar’i secara mendalam sekaligus rasional. Sejak muda, KH Hilmi telah dikenal cerdas dan tekun dalam mempelajari kitab-kitab klasik serta ilmu hisab untuk penentuan kalender Hijriyah. Beliau juga dipercaya menetapkan awal bulan Hijriyah secara lokal dengan metode rukyat dan hisab yang akurat.
+
+Selain aktif dalam pengajaran ilmu falak, KH Hilmi juga dikenal sebagai pengayom masyarakat yang bijaksana dan dekat dengan berbagai kalangan. Ia sering mengisi ceramah, membina majelis taklim, dan membimbing para santri dalam akhlak serta kehidupan sosial yang islami. Kegigihannya dalam menjaga warisan keilmuan klasik menjadikan beliau dihormati luas, tidak hanya di kalangan pesantren, tetapi juga oleh instansi keagamaan dan tokoh-tokoh Islam nasional. Sampai kini, pesantren yang ia dirikan tetap melanjutkan visi keilmuannya, menjadi cahaya ilmu falak dan syariat di tanah Banten.
+
+
+                  </p>
+                  <div style="clear: both;"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+              <div class="card border-0 px-2 pt-3">
+                <div class="card-body">
+                  <div style="float: left; margin-right: 15px; width: 130px;">
+                    <img src="img/Habib Zein bin Smith.png" class="img-fluid rounded" alt="Ustadz 3">
+                  </div>
+                  <h3 class="card-title">Habib Zein bin Smith</h3>
+                  <p class="card-text fs-5">
+                    Habib Zein bin Smith lahir di Jakarta pada tahun 1936 dan dikenal luas sebagai ulama keturunan Arab yang berpengaruh, khususnya di kalangan masyarakat Betawi. Ia berasal dari keluarga Alawiyyin, keturunan Nabi Muhammad ﷺ, dan mendapat pendidikan keagamaan secara intensif sejak kecil. Habib Zein dikenal sangat mendalami ilmu fikih, tauhid, dan nahwu. Selain itu, ia juga aktif berdakwah dan menjadi rujukan dalam berbagai persoalan keagamaan, baik secara formal melalui majelis taklim maupun dalam forum-forum masyarakat umum.
+
+Beliau juga dikenal memiliki kedekatan dengan berbagai tokoh dan organisasi Islam seperti Rabithah Alawiyah dan Nahdlatul Ulama (NU). Habib Zein memiliki karakter yang moderat, santun, dan terbuka dalam menyikapi perbedaan, sehingga dihormati oleh berbagai kalangan, termasuk tokoh lintas organisasi dan generasi muda. Perjuangannya dalam menjaga tradisi keilmuan dan keadaban Islam turut membentuk wajah Islam yang ramah dan berakar kuat di Indonesia, khususnya di Jakarta. Beliau wafat pada tahun 2017 dan dikenang sebagai ulama yang istiqamah dan penuh kasih.
+
+
+                  </p>
+                  <div style="clear: both;"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="carousel-item">
+              <div class="card border-0 px-2 pt-3">
+                <div class="card-body">
+                  <div style="float: left; margin-right: 15px; width: 130px;">
+                    <img src="img/Habib Salim.png" class="img-fluid rounded" alt="Ustadz 4">
+                  </div>
+                  <h3 class="card-title">Habib Salim</h3>
+                  <p class="card-text fs-5">
+                    Habib Salim bin Abdullah bin Umar al-Shatiri lahir di kota Tarim, Hadramaut, pada tahun 1359 H (1940 M). Ia adalah putra bungsu dari seorang ulama besar, Syaikh al-Islam Habib Abdullah bin Umar al-Shatiri, penulis kitab Sullam at-Taufiq. Ayahnya wafat saat ia masih berusia dua tahun, namun sebelum wafat beliau pernah berkata bahwa Habib Salim akan menjadi seorang "sultan" dalam ilmu—dan ramalan itu benar adanya. Habib Salim tumbuh di lingkungan ulama dan menimba ilmu dari tokoh-tokoh besar seperti Habib Alwi bin Syihab dan Habib Muhammad bin Salim bin Hafidz. Ia kemudian dikenal luas sebagai Sultan al-‘Ulama karena keluasan ilmunya, keteguhan dalam prinsip, dan kelembutan akhlaknya.
+
+Sebagai pemimpin Rubath Tarim, Habib Salim menjadi rujukan para penuntut ilmu dari berbagai negara, termasuk Indonesia. Ia berperan besar dalam menjaga kesinambungan manhaj Ahlus Sunnah wal Jama’ah serta menyebarkan ilmu fikih, tauhid, dan tasawuf murni. Santri-santrinya kini tersebar ke berbagai penjuru dunia dan banyak yang menjadi ulama ternama. Habib Salim wafat pada tahun 2022 di Tarim, dan jenazahnya dishalatkan oleh ribuan jamaah. Namanya tetap dikenang sebagai simbol keilmuan, adab, dan keteladanan ulama Hadramaut.
+
+
+                  </p>
+                  <div style="clear: both;"></div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Controls -->
+          <div class="d-flex justify-content-center gap-3 mt-3">
+  <button class="btn btn-dark rounded-circle" type="button" data-bs-target="#profileCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="btn btn-dark rounded-circle" type="button" data-bs-target="#profileCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+  <!-- Profil Sanad di bawah (penuh lebar) -->
+  <div class="col-12">
+    <div class="card shadow-sm">
+      <div class="card-header bg-success text-white">
+        <b>PROFILE SANAD</b>
+      </div>
+      <div class="card-body">
+        <div style="float: left; margin-right: 20px; width: 130px;">
+          <img src="img/sanad.jpg" class="img-fluid rounded" alt="Sanad">
+        </div>
+        <p class="card-text">
+          Kami menjaga kesinambungan ilmu melalui sanad yang bersambung kepada ulama terdahulu. Setiap pengajaran dikaitkan dengan jalur transmisi keilmuan yang sah, termasuk dalam:
+        </p>
+        <ul>
+          <li>📖 Kajian Kitab setiap Ahad</li>
+          <li>🕌 Shalat berjamaah & kultum ba'da Subuh</li>
+          <li>🎓 Kelas tahsin & tahfizh</li>
+          <li>🤝 Bakti sosial & berbagi sembako</li>
+        </ul>
+        <div style="clear: both;"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <div class="container py-5">
+  <h2 class="text-center mb-4 text-success">Struktur Organisasi Yayasan</h2>
+
+  <!-- Level 1: Pembina -->
+  <div class="d-flex justify-content-center mb-4">
+    <div class="card text-center border-success mx-2" style="width: 200px;">
+      <div class="card-header bg-success text-white">Pembina</div>
+      <div class="card-body">
+        <img src="img/pembina.jpg" class="rounded-circle mb-2" width="80" height="80" alt="Pembina">
+        <p class="mb-0">KH. Hilmy Syaroni</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Level 2: Ketua & Wakil Ketua -->
+  <div class="d-flex justify-content-center flex-wrap gap-3 mb-4">
+    <div class="card text-center border-primary" style="width: 200px;">
+      <div class="card-header bg-primary text-white">Ketua Yayasan</div>
+      <div class="card-body">
+        <img src="img/Ustadz H. Waisul Qurni Zainudin.png" class="rounded-circle mb-2" width="80" height="80" alt="Ketua">
+        <p class="mb-0">Ust. Ahmad Ridwan</p>
+      </div>
+    </div>
+    <div class="card text-center border-info" style="width: 200px;">
+      <div class="card-header bg-info text-white">Wakil Ketua</div>
+      <div class="card-body">
+        <img src="img/wakil.jpg" class="rounded-circle mb-2" width="80" height="80" alt="Wakil">
+        <p class="mb-0">Ust. Luthfi Hakim</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Level 3: Sekretaris & Bendahara -->
+  <div class="d-flex justify-content-center flex-wrap gap-3 mb-4">
+    <div class="card text-center border-warning" style="width: 200px;">
+      <div class="card-header bg-warning text-dark">Sekretaris</div>
+      <div class="card-body">
+        <img src="img/sekretaris.jpg" class="rounded-circle mb-2" width="80" height="80" alt="Sekretaris">
+        <p class="mb-0">Farhan Maulana</p>
+      </div>
+    </div>
+    <div class="card text-center border-warning" style="width: 200px;">
+      <div class="card-header bg-warning text-dark">Bendahara</div>
+      <div class="card-body">
+        <img src="img/bendahara.jpg" class="rounded-circle mb-2" width="80" height="80" alt="Bendahara">
+        <p class="mb-0">Nur Aini, S.E.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Level 4: Bidang-Bidang -->
+  <div class="d-flex justify-content-center flex-wrap gap-3">
+    <div class="card text-center border-secondary" style="width: 200px;">
+      <div class="card-header bg-secondary text-white">Pendidikan</div>
+      <div class="card-body">
+        <img src="img/pendidikan.jpg" class="rounded-circle mb-2" width="80" height="80" alt="Pendidikan">
+        <p class="mb-0">Faisal Hakim</p>
+      </div>
+    </div>
+    <div class="card text-center border-secondary" style="width: 200px;">
+      <div class="card-header bg-secondary text-white">Sosial</div>
+      <div class="card-body">
+        <img src="img/sosial.jpg" class="rounded-circle mb-2" width="80" height="80" alt="Sosial">
+        <p class="mb-0">Siti Rahmah</p>
+      </div>
+    </div>
+    <div class="card text-center border-secondary" style="width: 200px;">
+      <div class="card-header bg-secondary text-white">Humas</div>
+      <div class="card-body">
+        <img src="img/humas.jpg" class="rounded-circle mb-2" width="80" height="80" alt="Humas">
+        <p class="mb-0">Rahmat Prasetyo</p>
+      </div>
+    </div>
+    <div class="card text-center border-secondary" style="width: 200px;">
+      <div class="card-header bg-secondary text-white">Tim Media</div>
+      <div class="card-body">
+        <img src="img/media.jpg" class="rounded-circle mb-2" width="80" height="80" alt="Media">
+        <p class="mb-0">Muhammad Zain</p>
+      </div>
+    </div>
+    <div class="card text-center border-secondary" style="width: 200px;">
+      <div class="card-header bg-secondary text-white">Keamanan</div>
+      <div class="card-body">
+        <img src="img/keamanan.jpg" class="rounded-circle mb-2" width="80" height="80" alt="Keamanan">
+        <p class="mb-0">Ali Zainuddin</p>
+      </div>
+    </div>
+    <div class="card text-center border-secondary" style="width: 200px;">
+      <div class="card-header bg-secondary text-white">Kesehatan</div>
+      <div class="card-body">
+        <img src="img/kesehatan.jpg" class="rounded-circle mb-2" width="80" height="80" alt="Kesehatan">
+        <p class="mb-0">dr. Laila Khairunisa</p>
+      </div>
+    </div>
+    <div class="card text-center border-secondary" style="width: 200px;">
+      <div class="card-header bg-secondary text-white">IT & Website</div>
+      <div class="card-body">
+        <img src="img/it.jpg" class="rounded-circle mb-2" width="80" height="80" alt="IT">
+        <p class="mb-0">Fajar Nugraha</p>
+      </div>
+    </div>
+    <div class="card text-center border-secondary" style="width: 200px;">
+      <div class="card-header bg-secondary text-white">Kebersihan</div>
+      <div class="card-body">
+        <img src="img/kebersihan.jpg" class="rounded-circle mb-2" width="80" height="80" alt="Kebersihan">
+        <p class="mb-0">Dewi Lestari</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</main>
+
+
+  <!-- Footer -->
+  <footer>
+  <marquee behavior="scroll" direction="left">
+    <i class="fab fa-tiktok" style="color: #000000;"></i>
+    <span style="color: #000000;"> Tiktok: kongkowams_ </span>
+    
+    &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; 
+
+    <i class="fab fa-instagram" style="color: #db0a9d;"></i>
+    <span style="color: #db0a9d;"> Instagram: kongkowams_</span>
+
+    &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; 
+
+    <i class="fab fa-youtube" style="color: #FF0000;"></i>
+    <span style="color: #FF0000;"> Youtube: kongkowams_ </span>
+
+    &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; 
+
+   <span style="color: #000000;">BERGERAK BERSAMA. WUJUDKAN HARAPAN LEWAT BANK MANDIRI 1660-0061-70021 KODE BANK 008 A/N ALMANHAJUSSAWI DHIYAU</span>
+
+   &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; 
+
+</footer>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const elements = document.querySelectorAll(".fade-in-up");
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("appear");
+          observer.unobserve(entry.target); // hanya muncul sekali
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+
+    elements.forEach(el => observer.observe(el));
+  });
+</script>
+
+</body>
+</html>

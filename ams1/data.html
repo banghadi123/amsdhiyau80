@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f8fff8;
+      flex: 1;
+    }
+
+    main {
+      flex: 1;
+    }
+
+    /* Navbar Hijau Tua */
+    .navbar-custom {
+      background-color: #04630c;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar-brand,
+    .nav-link {
+      color: #ffffff !important;
+    }
+
+    .nav-link:hover {
+      color: #d1fae5 !important;
+    }
+
+    /* Hero Hijau Tua */
+    .hero {
+      background: linear-gradient(to right, #14532d, #b0b306);
+      padding: 100px 20px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      color: #ffffff;
+      font-weight: bold;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: #e4f9e7;
+      margin-top: 10px;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #37883d;
+      text-align: center;
+      padding: 20px;
+      color: #ffffff;
+      font-weight: 500;
+    }
+  </style>
+  <style>
+  .fade-in-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+  }
+
+  .fade-in-up.appear {
+    opacity: 1;
+    transform: translateY(0);
+  }
+</style>
+</head>
+
+<body>
+  <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand d-flex align-items-center" href="#" style="margin-left: 0;">
+      <img src="img/ams.png" alt="Logo" width="35" height="35" class="d-inline-block align-text-top rounded-circle me-2">
+      <span>KONGKOW TAKLIM ALMANHAJUSSAWI</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mainNavbar">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+        <li class="nav-item"><a class="nav-link" href="profile.html">Profile</a></li>
+        <li class="nav-item"><a class="nav-link" href="galeri.html">Galeri</a></li>
+
+        <!-- Dropdown Data -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="dataDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Data
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="dataDropdown">
+            <li><a class="dropdown-item" href="maghrib.html">Maghrib</a></li>
+            <li><a class="dropdown-item" href="isya.html">Isya</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a class="nav-link" href="#">Kontak</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+ <div class="container my-5">
+  <h2 class="text-center text-success mb-4">Formulir Pendaftaran Siswa</h2>
+  <form id="formSiswa" class="row g-3">
+    <div class="col-md-6">
+      <label for="nama" class="form-label">Nama Lengkap</label>
+      <input type="text" class="form-control" id="nama" required>
+    </div>
+    <div class="col-md-6">
+      <label for="tanggal" class="form-label">Tanggal Lahir</label>
+      <input type="date" class="form-control" id="tanggal" required>
+    </div>
+    <div class="col-md-6">
+      <label for="jenis" class="form-label">Jenis Kelamin</label>
+      <select class="form-select" id="jenis" required>
+        <option value="">Pilih</option>
+        <option>Laki-laki</option>
+        <option>Perempuan</option>
+      </select>
+    </div>
+    <div class="col-md-6">
+      <label for="hp" class="form-label">No HP Orang Tua</label>
+      <input type="tel" class="form-control" id="hp" required>
+    </div>
+    <div class="col-12">
+      <label for="alamat" class="form-label">Alamat</label>
+      <textarea class="form-control" id="alamat" rows="2" required></textarea>
+    </div>
+    <div class="col-12">
+      <label for="program" class="form-label">Program Pilihan</label>
+      <select class="form-select" id="program" required>
+        <option value="">Pilih Program</option>
+        <option>Tahfizh</option>
+        <option>Kajian Kitab</option>
+        <option>Tahsin</option>
+      </select>
+    </div>
+    <div class="col-12 text-center">
+      <button type="submit" class="btn btn-success px-5">Kirim</button>
+    </div>
+  </form>
+
+  <!-- Hasil Tampil -->
+  <div id="hasil" class="mt-5 d-none">
+    <h4 class="text-center mb-3 text-success">Data Siswa</h4>
+    <ul class="list-group">
+      <li class="list-group-item"><strong>Nama:</strong> <span id="outNama"></span></li>
+      <li class="list-group-item"><strong>Tanggal Lahir:</strong> <span id="outTanggal"></span></li>
+      <li class="list-group-item"><strong>Jenis Kelamin:</strong> <span id="outJenis"></span></li>
+      <li class="list-group-item"><strong>No HP:</strong> <span id="outHp"></span></li>
+      <li class="list-group-item"><strong>Alamat:</strong> <span id="outAlamat"></span></li>
+      <li class="list-group-item"><strong>Program:</strong> <span id="outProgram"></span></li>
+    </ul>
+  </div>
+</div>
+
+<script>
+  const form = document.getElementById('formSiswa');
+  const hasil = document.getElementById('hasil');
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    // Ambil nilai input
+    document.getElementById('outNama').textContent = document.getElementById('nama').value;
+    document.getElementById('outTanggal').textContent = document.getElementById('tanggal').value;
+    document.getElementById('outJenis').textContent = document.getElementById('jenis').value;
+    document.getElementById('outHp').textContent = document.getElementById('hp').value;
+    document.getElementById('outAlamat').textContent = document.getElementById('alamat').value;
+    document.getElementById('outProgram').textContent = document.getElementById('program').value;
+
+    // Tampilkan hasil
+    hasil.classList.remove('d-none');
+
+    // Reset form
+    form.reset();
+  });
+</script>

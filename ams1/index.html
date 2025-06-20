@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Beranda</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Scheherazade&display=swap" rel="stylesheet">
+
+  <style>
+   body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8fff8;
+}
+
+/* Navbar Hijau Tua */
+.navbar-custom {
+    background-color: #04630c;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .navbar-brand,
+  .nav-link {
+    color: #ffffff !important;
+  }
+
+  .nav-link:hover {
+    color: #d1fae5 !important;
+  }
+
+  .offcanvas {
+    background-color: #04630c;
+  }
+
+  .offcanvas .nav-link {
+    color: white;
+    font-size: 1.1rem;
+  }
+
+  .offcanvas .nav-link:hover {
+    color: #d1fae5;
+  }
+/* Hero Hijau Tua */
+.hero {
+  background-color: #04630c;
+  background: linear-gradient(to right, #14532d, #b0b306);
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #e4f9e7;
+  margin-top: 10px;
+}
+
+/* Footer Hijau Tua */
+footer {
+  background-color: #37883d;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  color: #ffffff;
+  font-weight: 500;
+}
+/* Animasi Logo Melayang */
+.floating-logos {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  z-index: 0;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.floating-logos img.floating {
+  position: absolute;
+  width: 40px;
+  opacity: 0.1;
+  animation: float 8s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-20px) rotate(10deg); }
+  100% { transform: translateY(0px) rotate(0deg); }
+}
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+  }
+
+  .map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+#typed-extra-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #f0f0f0;
+}
+#typed-paragraph {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #f0f0f0;
+}
+/* Animasi Fade In */
+  .animated {
+    animation: fadeInUp 1s ease-in-out;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .responsive-logo {
+  max-width: 250px;
+}
+
+@media (max-width: 768px) {
+  .responsive-logo {
+    max-width: 180px;
+  }
+}
+
+@media (max-width: 576px) {
+  .responsive-logo {
+    max-width: 150px;
+  }
+}
+.running-text-container {
+    width: 100%;
+    overflow: hidden;
+    background: #37883d; /* bisa diganti sesuai tema */
+    white-space: nowrap;
+  }
+
+  .running-text {
+    display: inline-block;
+    padding-left: 100%;
+    animation: scroll-left 30s linear infinite;
+  }
+
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+</style>
+</head>
+<body>
+ <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand d-flex align-items-center" href="#" style="margin-left: 0;">
+      <div class="d-flex flex-column">
+        <span style="font-weight: bold; font-size: 1.6rem; color: #ffffff;">YAYASAN ALMANHAJUSSAWI DHIYAU NUSANTARA.</span>
+        <small style="font-size: 1.2rem; color: #ffffff;">KEMENKUMHAM NO : AHU-0021398.AH.01.04.TAHUN 2022</small>
+      </div>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-label="Toggle navigation">
+
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mainNavbar">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+        <li class="nav-iatem"><a class="nav-link" href="profile.html">Profile</a></li>
+        <li class="nav-item"><a class="nav-link" href="galeri.html">Galeri</a></li>
+        <li class="nav-item"><a class="nav-link" href="portofolio.html">portofolio</a></li>
+
+        <!-- Dropdown Data -->
+        <li class="nav-item dropdown">
+         <a class="nav-link dropdown-toggle" href="#" id="dataDropdownDATA" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Data
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="dataDropdownDATA">
+            <li><a class="dropdown-item" href="maghrib.html">Maghrib</a></li>
+            <li><a class="dropdown-item" href="isya.html">Isya</a></li>
+          </ul>
+        </li>
+        <!-- Dropdown Data -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="dataDropdownBIDANG" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            bidang
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="dataDropdownBIDANG">
+            <li><a class="dropdown-item" href="tim media.html">tim media</a></li>
+            <li><a class="dropdown-item" href="#"></a></li>
+          </ul>
+        </li>
+        <!-- Dropdown Data -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="dataDropdownKEGIATAN" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            kegiatan
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="dataDropdownKEGIATAN">
+            <li><a class="dropdown-item" href="sosial.html">sosial</a></li>
+            <li><a class="dropdown-item" href="#"></a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a class="nav-link" href="kontak.html">Kontak</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  <!-- Hero Section -->
+ <main>
+  <section class="hero">
+  <div class="container d-flex align-items-center justify-content-center flex-wrap hero-content-wrapper">
+    
+  <img src="img/yayasan.png" alt="Logo" class="logo-timbul" style="width: 250px; height: auto;">
+
+    <div class="text-center"> 
+      <h1 style="direction: rtl; font-family: 'Scheherazade', serif;">
+        <span id="typed-text-1"></span><br>
+        <span id="typed-text-2"></span>
+      </h1>
+      <p><span id="typed-paragraph"></span></p>
+      <p id="typed-extra-text"></p>
+    </div>
+    
+  </div>
+</section>
+ <!-- Main Content -->
+<div class="container mt-5">
+  <div class="row">
+    <!-- Kolom kiri: Peta -->
+    <div class="col-md-5 mb-4">
+      <!-- Card Lokasi -->
+      <div class="card shadow text-white mb-4" style="background-color: #04630c;">
+        <div class="card-body">
+          <h5 class="card-title">Lokasi Majelis </h5>
+          <div class="map-responsive">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.502684636571!2d106.8995705!3d-6.2201358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f1707a6cbce3%3A0x7169bbb78d224055!2sKongkow%20Taklim%20Al%20Manhajussawi!5e0!3m2!1sid!2sid!4v1717450930102!5m2!1sid!2sid" 
+              width="100%" 
+              height="250" 
+              style="border:0;" 
+              allowfullscreen 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tambahan Card di bawah Google Maps -->
+      <div class="card shadow text-white" style="background-color: #04630c;">
+        <div class="card-body">
+          <h5 class="card-title">Misi kami</h5>
+          <ul class="fs-5">
+            <li>Menyelenggarakan pendidikan Islam yang mengdepankan nilai toleransi dan keterbukaan</li>
+            <li>Membangun kolaborasi dengan berbagai pihak untuk menciptakan lingkungan yang harmonis</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Kolom kanan: Visi & Misi -->
+    <div class="col-md-7">
+      <!-- Card Visi -->
+      <div class="card shadow text-white mb-4" style="background-color: #04630c;">
+        <div class="card-body">
+          <h4 class="card-title">Visi Kami</h4>
+          <p class="card-text fs-4">
+            "Mewujudkan generasi Qurani yang toleran dan inklusif untuk membangun masyarakat indonesia yang harmonis dan peduli sosial"
+          </p>
+        </div>
+      </div>
+<div id="videoCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+  <div class="carousel-inner">
+    <!-- Slide 1 -->
+    <div class="carousel-item active">
+      <div class="card shadow text-white" style="background-color: #04630c;">
+        <div class="card-body">
+          <h5 class="card-title mb-3">Video 1</h5>
+          <div class="d-flex justify-content-center">
+            <div style="width: 100%; max-width: 500px; border-radius: 8px; overflow: hidden;">
+              <div class="ratio ratio-16x9">
+                <iframe 
+                  src="https://www.youtube.com/embed/hNMTxkQkO8Y" 
+                  title="Video 1" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowfullscreen>
+                </iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="carousel-item">
+      <div class="card shadow text-white" style="background-color: #04630c;">
+        <div class="card-body">
+          <h5 class="card-title mb-3">Video 2</h5>
+          <div class="d-flex justify-content-center">
+            <div style="width: 100%; max-width: 500px; border-radius: 8px; overflow: hidden;">
+              <div class="ratio ratio-16x9">
+                <iframe 
+                  src="https://www.youtube.com/embed/OSmUsnqHnxU?si=ysc_cfbPXLQ87kaD" 
+                  title="Video 2" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowfullscreen>
+                </iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="carousel-item">
+      <div class="card shadow text-white" style="background-color: #04630c;">
+        <div class="card-body">
+          <h5 class="card-title mb-3">Video 3</h5>
+          <div class="d-flex justify-content-center">
+            <div style="width: 100%; max-width: 500px; border-radius: 8px; overflow: hidden;">
+              <div class="ratio ratio-16x9">
+                <iframe 
+                  src="https://www.youtube.com/embed/W4ZROIVtkRg?si=cn4fvrm9P0VcteLg" 
+                  title="Video 3" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowfullscreen>
+                </iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 4 -->
+    <div class="carousel-item">
+      <div class="card shadow text-white" style="background-color: #04630c;">
+        <div class="card-body">
+          <h5 class="card-title mb-3">Video 4</h5>
+          <div class="d-flex justify-content-center">
+            <div style="width: 100%; max-width: 500px; border-radius: 8px; overflow: hidden;">
+              <div class="ratio ratio-16x9">
+                <iframe 
+                  src="https://www.youtube.com/embed/9fOY50ChFgI?si=Q-du-LEMMFk509Ry" 
+                  title="Video 4" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowfullscreen>
+                </iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- Slide 5-->
+    <div class="carousel-item">
+      <div class="card shadow text-white" style="background-color: #04630c;">
+        <div class="card-body">
+          <h5 class="card-title mb-3">Video 5</h5>
+          <div class="d-flex justify-content-center">
+            <div style="width: 100%; max-width: 500px; border-radius: 8px; overflow: hidden;">
+              <div class="ratio ratio-16x9">
+                <iframe 
+                  src="https://www.youtube.com/embed/GdHt-AKf2dM?si=k23gAltyu-4PoNRF" 
+                  title="Video 5" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowfullscreen>
+                </iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Slide 6-->
+    <div class="carousel-item">
+      <div class="card shadow text-white" style="background-color: #04630c;">
+        <div class="card-body">
+          <h5 class="card-title mb-3">Video 6</h5>
+          <div class="d-flex justify-content-center">
+            <div style="width: 100%; max-width: 500px; border-radius: 8px; overflow: hidden;">
+              <div class="ratio ratio-16x9">
+                <iframe 
+                  src="https://www.youtube.com/embed/Qoda8Qw5bRk?si=QmTyS47QdaEbY7k_" 
+                  title="Video 6" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowfullscreen>
+                </iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- Controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#videoCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Sebelumnya</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#videoCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Berikutnya</span>
+  </button>
+</div>
+<!-- akhir kolom kanan -->
+</div>
+</div>
+</div>
+</div>
+<!-- Pengumuman Donatur -->
+ <!-- Pengumuman Donatur -->
+<div class="container mb-5">
+  <div class="card shadow text-white border-0 rounded-4 p-3" style="background: linear-gradient(135deg, #14532d, #04630c);">
+    <div class="card-body text-center">
+      <h5 class="card-title mb-3">
+        <i class="fas fa-hand-holding-heart me-2 text-warning"></i>
+        <strong>Informasi untuk Donatur</strong>
+      </h5>
+      <p class="mb-3">
+        Terima kasih kepada seluruh donatur atas kepercayaannya dalam mendukung kegiatan dakwah, pendidikan, dan sosial kami.
+      </p>
+      <div class="row text-start text-md-center">
+        <div class="col-md-6 mb-3">
+          <h6 class="text-warning mb-1">Rekening Donasi</h6>
+          <p class="mb-1"><strong>Bank Mandiri</strong></p>
+          <p class="mb-1">1660-0061-70021</p>
+          <p class="mb-2"><strong>A/N</strong> ALMANHAJUSSAWI DHIYAU NUSANTARA</p>
+        </div>
+        <div class="col-md-6">
+          <h6 class="text-warning mb-1">Konfirmasi & Info</h6>
+          <p class="mb-1"><i class="fas fa-phone-alt"></i> 0812-XXXX-XXXX (Admin Donasi)</p>
+          <p class="mb-0"><i class="fab fa-whatsapp"></i> Klik untuk chat: <a href="https://wa.me/62812XXXXXXX" class="text-decoration-underline text-white" target="_blank">WhatsApp</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Footer -->
+<footer>
+  <div class="running-text-container">
+    <div class="running-text">
+      <i class="fab fa-tiktok" style="color: #000000;"></i>
+      <span style="color: #000000;"> Tiktok: kongkowams_ </span>
+      &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;
+      <i class="fab fa-instagram" style="color: #db0a9d;"></i>
+      <span style="color: #db0a9d;"> Instagram: kongkowams_</span>
+      &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;
+      <i class="fab fa-youtube" style="color: #FF0000;"></i>
+      <span style="color: #FF0000;"> Youtube: kongkowams_ </span>
+      &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;
+      <span style="color: #000000;">BERGERAK BERSAMA. WUJUDKAN HARAPAN LEWAT BANK MANDIRI 1660-0061-70021 KODE BANK 008 A/N ALMANHAJUSSAWI DHIYAU</span>
+      &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;
+    </div>
+  </div>
+</footer>
+
+<script>
+  const text1 = "أهلاً وسهلاً بحضوركم";
+  const text2 = "السلام عليكم ورحمة الله وبركاته";
+  const paragraphText = "SELAMAT DATANG DI YAYASAN PENDIDIKAN ISLAM DAN SOSIAL";
+  const extraText = "ALMANHAJUSSAWI DHIYAU NUSANTARA.";
+  
+  const typedText1 = document.getElementById("typed-text-1");
+  const typedText2 = document.getElementById("typed-text-2");
+  const typedParagraph = document.getElementById("typed-paragraph");
+  const typedExtraText = document.getElementById("typed-extra-text");
+
+  let index1 = 0;
+  let index2 = 0;
+  let indexP = 0;
+  let indexExtra = 0;
+
+  function typeFirstLine() {
+    if (index1 < text1.length) {
+      typedText1.innerHTML += text1.charAt(index1);
+      index1++;
+      setTimeout(typeFirstLine, 80);
+    } else {
+      setTimeout(typeSecondLine, 500);
+    }
+  }
+
+  function typeSecondLine() {
+    if (index2 < text2.length) {
+      typedText2.innerHTML += text2.charAt(index2);
+      index2++;
+      setTimeout(typeSecondLine, 80);
+    } else {
+      setTimeout(typeParagraph, 600);
+    }
+  }
+
+  function typeParagraph() {
+    if (indexP < paragraphText.length) {
+      typedParagraph.innerHTML += paragraphText.charAt(indexP);
+      indexP++;
+      setTimeout(typeParagraph, 40);
+    } else {
+      setTimeout(typeExtraText, 500);
+    }
+  }
+
+  function typeExtraText() {
+    if (indexExtra < extraText.length) {
+      typedExtraText.innerHTML += extraText.charAt(indexExtra);
+      indexExtra++;
+      setTimeout(typeExtraText, 40);
+    }
+  }
+
+  window.addEventListener("load", typeFirstLine);
+</script>
+</body>
+</html>
